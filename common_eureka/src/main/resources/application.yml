@@ -1,0 +1,13 @@
+# 服务名称
+spring:
+  application:
+    name: eureka-server
+#服务端口
+server:
+  port: 8761
+ # 不用自己注册自己,关闭注册. 因为这是服务端,所以把客户端给关掉.
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
